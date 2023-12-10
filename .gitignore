@@ -1,0 +1,9 @@
+# Editors
+.idea/
+.vscode/
+
+# Executables
+cf-tlsa-acmesh
+cf-tlsa-acmesh.exe
+cf-tlsa-acmesh-x86-64
+cf-tlsa-acmesh-arm64
