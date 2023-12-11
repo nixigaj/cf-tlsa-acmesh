@@ -106,13 +106,6 @@ func main() {
 }
 
 func getTLSARecords() ([]tlsaRecord, error) {
-	requiredEnvVars := []string{"ZONE_ID", "API_TOKEN", "DOMAIN"}
-	for _, envVar := range requiredEnvVars {
-		if os.Getenv(envVar) == "" {
-			return nil, fmt.Errorf("%s environment variable is not defined", envVar)
-		}
-	}
-
 	zoneID := os.Getenv("ZONE_ID")
 	authToken := os.Getenv("API_TOKEN")
 	domain := os.Getenv("DOMAIN")
